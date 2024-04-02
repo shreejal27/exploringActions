@@ -49,9 +49,9 @@ jobs:
       - run: echo "This job's status is ${{ job.status }}."
 
   Second-Job:
-    name: The second job running on another runer
+    name: The second job running on another runner
     runs-on: ubuntu-latest
     needs: Example-Actions-Job
     steps:
-      - run: "This job is now running on a ${{ runner.os }} server hosted by Github."
+      - run: echo "This job is now running on a ${{ runner.os }} server hosted by Github."
             
